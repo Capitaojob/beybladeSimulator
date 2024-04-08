@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(23, 18, 56);
+}
+
+section.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100%;
+    background-color: rgb(43, 35, 95);
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    color: #fff;
+    margin: 40px 0;
+    font-size: 2.5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h2 {
+    color: #fff;
+    margin: 10px 10px;
+    font-size: 1.5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.menu button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 100ms ease all;
+}
+
+.menu button:hover {
+    transform: scale(1.1);
+}
+
+section.beyblade_creation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    background-color: rgb(43, 35, 95);
+    box-shadow: -5px -5px 10px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.beyblade form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beyblade form label {
+    color: #fff;
+}
+
+.beyblade form input,
+.beyblade form select {
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+    border: none;
+}
+
+select option {
+    background-color: #554f7f;
+    border-radius: 0;
+    border: none;
+}
+
+.beyblade form input,
+.beyblade form select,
+.beyblade form label {
+    padding: 10px;
+    width: 100%;
+}
+
+#beybladeCanvas {
+    background-image: url('./img/arena.png');
+    /* border-radius: 5%; */
+    /* box-sizing: content-box; */
+    /* border: 20px solid #585470; */
+    /* background-color: #454160; */
+    /* box-shadow: inset 0px 0px 100px 100px rgba(0, 0, 0, 0.2); */
+}
