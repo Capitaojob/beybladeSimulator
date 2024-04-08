@@ -1,93 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>WBB - Worldwide Beyblade Battle</title>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="shortcut icon" href="./img/meteoldrago.png" type="image/x-icon" />
-        <script src="./scripts/index.js" defer type="module"></script>
-    </head>
-    <body>
-        <section class="menu">
-            <h1>Beyblade Battle</h1>
-            <button type="button" class="start">Let It Rip!</button>
-            <button type="button" class="stop">Stop</button>
-            <button type="button" class="pause">Pause</button>
-        </section>
-        <canvas width="940px" height="940px" id="beybladeCanvas"></canvas>
-        <section class="beyblade_creation">
-            <h2>Left Beyblade</h2>
-            <div class="beyblade left">
-                <form>
-                    <label for="left_bey_name">Name</label>
-                    <!-- <input type="text" name="left_bey_name" id="left_bey_name" value="Meteo L-Drago"> -->
-                    <select name="left_bey_name" id="left_bey_name">
-                        <option value="galaxypegasis">Galaxy Pegasis</option>
-                        <option value="bigbangpegasus">Big Bang Pegasus</option>
-                        <option value="hellkerbecs">Hell Kerbecs</option>
-                        <option value="meteoldrago" selected>Meteo L-Drago</option>
-                        <option value="ldragodestructor">L-Drago Destructor</option>
-                        <option value="gravityperseus">Gravity Perseus</option>
-                        <option value="vulcanhoruseus">Vulcan Horuseus</option>
-                        <option value="phantomorion">Phantom Orion</option>
-                    </select>  
-                    <label for="left_bey_type">Type</label>
-                    <select name="left_bey_type" id="left_bey_type">
-                        <option value="attack" selected>Attack</option>
-                        <option value="defense">Defense</option>
-                        <option value="stamina">Stamina</option>
-                    </select>
-                    <label for="left_bey_direction">Direction</label>
-                    <select name="left_bey_direction" id="left_bey_direction">
-                        <option value="1">Right</option>
-                        <option value="-1" selected>Left</option>
-                    </select>
-                    <label for="left_bey_vx">Starting VX</label>
-                    <input type="number" name="left_bey_vx" id="left_bey_vx" min="0" max="38">
-                    <label for="left_bey_vy">Starting VY</label>
-                    <input type="number" name="left_bey_vy" id="left_bey_vy" min="-38" max="38">
-                    <label for="left_bey_weight">Weight</label>
-                    <input type="number" name="left_bey_weight" id="left_bey_weight" min="75" max="160" value="100">
-                </form>
-            </div>
-            <br>
-            <hr>
-            <br>
-            <div class="beyblade right">
-                <h2>Right Beyblade</h2>
-                <form>
-                    <label for="right_bey_name">Name</label>
-                    <!-- <input type="text" name="right_bey_name" id="right_bey_name" value="Galaxy Pegasis"> -->
-                    <select name="right_bey_name" id="right_bey_name">
-                        <option value="galaxypegasis" selected>Galaxy Pegasis</option>
-                        <option value="bigbangpegasus">Big Bang Pegasus</option>
-                        <option value="hellkerbecs">Hell Kerbecs</option>
-                        <option value="meteoldrago">Meteo L-Drago</option>
-                        <option value="ldragodestructor">L-Drago Destructor</option>
-                        <option value="gravityperseus">Gravity Perseus</option>
-                        <option value="vulcanhoruseus">Vulcan Horuseus</option>
-                        <option value="phantomorion">Phantom Orion</option>
-                    </select>  
-                    <label for="right_bey_type">Type</label>
-                    <select name="right_bey_type" id="right_bey_type">
-                        <option value="attack" selected>Attack</option>
-                        <option value="defense">Defense</option>
-                        <option value="stamina">Stamina</option>
-                    </select>
-                    <label for="right_bey_direction">Direction</label>
-                    <select name="right_bey_direction" id="right_bey_direction">
-                        <option value="1" selected>Right</option>
-                        <option value="-1">Left</option>
-                    </select>
-                    <label for="right_bey_vx">Starting VX</label>
-                    <input type="number" name="right_bey_vx" id="right_bey_vx" min="0" max="38">
-                    <label for="right_bey_vy">Starting VY</label>
-                    <input type="number" name="right_bey_vy" id="right_bey_vy" min="-38" max="38">
-                    <label for="right_bey_weight">Weight</label>
-                    <input type="number" name="right_bey_weight" id="right_bey_weight" min="75" max="160" value="100">
-                </form>
-            </div>
-        </section>
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WBB - Worldwide Beyblade Battle</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="./img/meteoldrago.png" type="image/x-icon" />
+		<script src="./scripts/index.js" defer type="module"></script>
+	</head>
+	<body>
+		<section class="menu">
+			<h1>Beyblade Battle</h1>
+			<button type="button" class="start">Let It Rip!</button>
+			<button type="button" class="stop">Stop</button>
+			<button type="button" class="pause">Pause</button>
+		</section>
+		<canvas width="940px" height="940px" id="beybladeCanvas" class="arena"></canvas>
+		<section class="beyblade_creation">
+			<h2>Left Beyblade</h2>
+			<div class="beyblade left">
+				<form>
+					<label for="left_bey_name">Name</label>
+					<!-- <input type="text" name="left_bey_name" id="left_bey_name" value="Meteo L-Drago"> -->
+					<select name="left_bey_name" id="left_bey_name">
+						<option value="galaxypegasis">Galaxy Pegasis</option>
+						<option value="bigbangpegasus">Big Bang Pegasus</option>
+						<option value="hellkerbecs">Hell Kerbecs</option>
+						<option value="meteoldrago" selected>Meteo L-Drago</option>
+						<option value="ldragodestructor">L-Drago Destructor</option>
+						<option value="gravityperseus">Gravity Perseus</option>
+						<option value="vulcanhoruseus">Vulcan Horuseus</option>
+						<option value="phantomorion">Phantom Orion</option>
+					</select>
+					<label for="left_bey_type">Type</label>
+					<select name="left_bey_type" id="left_bey_type">
+						<option value="attack" selected>Attack</option>
+						<option value="defense">Defense</option>
+						<option value="stamina">Stamina</option>
+					</select>
+					<label for="left_bey_direction">Direction</label>
+					<select name="left_bey_direction" id="left_bey_direction">
+						<option value="1">Right</option>
+						<option value="-1" selected>Left</option>
+					</select>
+					<label for="left_bey_vx">Starting VX</label>
+					<input type="number" name="left_bey_vx" id="left_bey_vx" min="0" max="38" />
+					<label for="left_bey_vy">Starting VY</label>
+					<input type="number" name="left_bey_vy" id="left_bey_vy" min="-38" max="38" />
+					<label for="left_bey_weight">Weight</label>
+					<input type="number" name="left_bey_weight" id="left_bey_weight" min="75" max="160" value="100" />
+				</form>
+			</div>
+			<br />
+			<hr />
+			<br />
+			<div class="beyblade right">
+				<h2>Right Beyblade</h2>
+				<form>
+					<label for="right_bey_name">Name</label>
+					<!-- <input type="text" name="right_bey_name" id="right_bey_name" value="Galaxy Pegasis"> -->
+					<select name="right_bey_name" id="right_bey_name">
+						<option value="galaxypegasis" selected>Galaxy Pegasis</option>
+						<option value="bigbangpegasus">Big Bang Pegasus</option>
+						<option value="hellkerbecs">Hell Kerbecs</option>
+						<option value="meteoldrago">Meteo L-Drago</option>
+						<option value="ldragodestructor">L-Drago Destructor</option>
+						<option value="gravityperseus">Gravity Perseus</option>
+						<option value="vulcanhoruseus">Vulcan Horuseus</option>
+						<option value="phantomorion">Phantom Orion</option>
+					</select>
+					<label for="right_bey_type">Type</label>
+					<select name="right_bey_type" id="right_bey_type">
+						<option value="attack" selected>Attack</option>
+						<option value="defense">Defense</option>
+						<option value="stamina">Stamina</option>
+					</select>
+					<label for="right_bey_direction">Direction</label>
+					<select name="right_bey_direction" id="right_bey_direction">
+						<option value="1" selected>Right</option>
+						<option value="-1">Left</option>
+					</select>
+					<label for="right_bey_vx">Starting VX</label>
+					<input type="number" name="right_bey_vx" id="right_bey_vx" min="0" max="38" />
+					<label for="right_bey_vy">Starting VY</label>
+					<input type="number" name="right_bey_vy" id="right_bey_vy" min="-38" max="38" />
+					<label for="right_bey_weight">Weight</label>
+					<input type="number" name="right_bey_weight" id="right_bey_weight" min="75" max="160" value="100" />
+				</form>
+			</div>
+		</section>
+	</body>
 </html>
